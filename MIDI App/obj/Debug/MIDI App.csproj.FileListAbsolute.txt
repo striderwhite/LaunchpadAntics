@@ -9,3 +9,14 @@ C:\Users\STRIDER\Desktop\MIDI App\MIDI App\bin\Debug\MIDI App.pdb
 C:\Users\STRIDER\Desktop\MIDI App\MIDI App\bin\Debug\Midi.dll
 C:\Users\STRIDER\Desktop\MIDI App\MIDI App\obj\Debug\MIDI App.exe
 C:\Users\STRIDER\Desktop\MIDI App\MIDI App\obj\Debug\MIDI App.pdb
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\bin\Debug\MIDI App.exe.config
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\bin\Debug\MIDI App.exe
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\bin\Debug\MIDI App.pdb
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\bin\Debug\Midi.dll
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI App.csprojResolveAssemblyReference.cache
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI_App.FormMain.resources
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI_App.Properties.Resources.resources
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI App.csproj.GenerateResource.Cache
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI App.csproj.CoreCompileInputs.cache
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI App.exe
+C:\Users\swhite\Desktop\LaunchpadAntics\MIDI App\obj\Debug\MIDI App.pdb

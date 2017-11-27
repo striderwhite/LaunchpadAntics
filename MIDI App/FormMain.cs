@@ -16,29 +16,50 @@ namespace MIDI_App
 
   public partial class FormMain : Form
   {
+
+    FormDrawer drawer = null;
     OutputDevice launchpadOut;
     InputDevice launchpadIn;
-
     Random rng = new Random();
-
     ReadOnlyCollection<InputDevice> devicesCollection;
     List<InputDevice> devices;
 
-    private readonly int BPM = 250;
+    private const int SCREEN_WIDTH = 500;
+    private const int SCREEN_HEIGHT = 500;
+    private const int BPM = 250;
     private int TestColor = 51;
 
     public FormMain()
     {
       InitializeComponent();
+      Paint += FormMain_Paint;
+    }
+
+    private void FormMain_Paint(object sender, PaintEventArgs e)
+    {
+      if (drawer == null){
+        drawer = new FormDrawer(e.Graphics, SCREEN_WIDTH, SCREEN_HEIGHT);
+      }
+      drawer.UpdateGraphics();
     }
 
     private void FormMain_Load(object sender, EventArgs e)
     {
+      //Visual stuff
+      //BackColor = Color.FromArgb(255, 22, 30, 43);
+
+
       devicesCollection = InputDevice.InstalledDevices;
       devices = new List<InputDevice>(devicesCollection);
 
       launchpadIn = GetLaunchpadInputDevice();
       launchpadOut = GetLaunchpadOutputDevice();
+
+      if(launchpadIn == null || launchpadOut == null)
+      {
+        MessageBox.Show("No Launchpad Detected", "Error");
+        return;
+      }
 
       launchpadIn.Open();
       launchpadOut.Open();
@@ -51,12 +72,12 @@ namespace MIDI_App
 
       TurnOnAllButtons();
 
-      Thread ButtonControllerThread = new Thread(operateButtons);
+      Thread ButtonControllerThread = new Thread(OperateButtons);
       ButtonControllerThread.Start();
 
     }
 
-    private void operateButtons()
+    private void OperateButtons()
     {
       while (true)
       {

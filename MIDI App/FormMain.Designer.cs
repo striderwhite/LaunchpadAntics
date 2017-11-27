@@ -34,9 +34,11 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(284, 261);
+      this.ClientSize = new System.Drawing.Size(509, 511);
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
       this.Name = "FormMain";
-      this.Text = "Midi App";
+      this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+      this.Text = "Launchpad ";
       this.Load += new System.EventHandler(this.FormMain_Load);
       this.ResumeLayout(false);
 
