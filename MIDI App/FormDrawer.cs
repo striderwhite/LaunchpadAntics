@@ -21,7 +21,7 @@ namespace MIDI_App
     private int SCREEN_HEIGHT = 500;
 
     //test grid
-    int[,] grid = new int[8, 8];
+    public int[,] grid = new int[8, 8];
 
     public FormDrawer(Graphics g, int width, int height)
     {
